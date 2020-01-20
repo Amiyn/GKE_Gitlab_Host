@@ -108,7 +108,7 @@ cat values.yaml.tpl | envsubst > values.yaml
 
 #Install Helm Charts
 ./helm repo add gitlab https://charts.gitlab.io/
-./helm install -f values.yaml --version 1.7.1 -n gitlab gitlab/gitlab
+./helm install -f values.yaml -n gitlab gitlab/gitlab
 
 #Set-up Monitoring
 git clone https://github.com/stackdriver/stackdriver-prometheus-sidecar
