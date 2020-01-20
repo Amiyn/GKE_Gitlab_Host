@@ -5,10 +5,10 @@
 #!/bin/sh -x
 #Enable API's and Services
 
-gcloud services enable container.googleapis.com \
-       servicenetworking.googleapis.com \
-       cloudresourcemanager.googleapis.com \
-       redis.googleapis.com
+gcloud services enable container.googleapis.com
+gcloud services enable servicenetworking.googleapis.com
+gcloud services enable cloudresourcemanager.googleapis.com
+gcloud services enable redis.googleapis.com
 	   
 #Create Service Accounts and Roles --additinonal configuration may be needed; 
 #see https://medium.com/google-cloud/gitlab-continuous-deployment-pipeline-to-gke-with-helm-69d8a15ed910
