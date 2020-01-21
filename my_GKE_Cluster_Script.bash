@@ -2,7 +2,7 @@
 #amiyn@amiyn.com - gitlab.com/amiyn - amiyn.com
 #October 16, 2019######################################################################################################################
 #####################################GKE CLUSTER WITH SELF-HOSTED GITLAB CI/CI SETUP###################################################
-#!/bin/sh -x
+#!/bin/bash -x
 #Enable API's and Services
 
 gcloud services enable container.googleapis.com
