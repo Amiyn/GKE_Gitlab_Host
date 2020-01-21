@@ -38,7 +38,7 @@ gcloud compute addresses create gitlab-sql --global --prefix-length 20 --descrip
 gcloud services vpc-peerings connect --service servicenetworking.googleapis.com --ranges=gitlab-sql --network default --project amiyndevops
 
 #Create DB Instance
-gcloud sql instances create gitlab-db --database-version=POSTGRES_11 --cpu=2 --memory=4 --region=us-central1-a --authorized-networks default
+gcloud sql instances create gitlab-db --database-version=POSTGRES_11 --cpu=2 --memory=4 --region=us-central1-a --authorized-networks default --no-aasign_ip
 
 #Create User/Password
 export PASSWORD=$(openssl rand -base64 18)
